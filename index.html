@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Campeonato Veteranos 2026</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- HEADER (igual que antes) -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="Logo Campeonato Veteranos" class="logo-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/80x80/372AAC/ffffff?text=Balón';">
+                    <h1 class="tournament-title">CAMPEONATO DE FÚTBOL VETERANOS</h1>
+                </div>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="fixture.html">Fixture</a></li>
+                        <li><a href="tabla.html">Tabla</a></li>
+                        <li><a href="equipos.html">Equipos</a></li>
+                        <li><a href="#" id="contactoLink">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <section class="fixture-section">
+                <!-- Contenido de fixture igual que antes -->
+                <div class="fixture-card">
+                    <h2 class="fixture-title">PRÓXIMA FECHA</h2>
+                    <div class="fixture-image-container">
+                        <img src="https://marketplace.canva.com/EAFMUzUQ0Yo/2/0/900w/canva-tu-story-fixture-llamativo-rojo-BsfC9WcGST0.jpg" alt="Fixture Fecha 18 Febrero 2026" class="fixture-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400/D6D3D1/333333?text=Fixture+18+Feb+2026';">
+                        <div class="fixture-overlay">
+                            <p class="overlay-text">FIXTURE FECHA 18 DE FEBRERO DEL 2026</p>
+                        </div>
+                    </div>
+                    <p class="fixture-description">Todos los partidos de la próxima jornada. ¡No te pierdas la acción!</p>
+                    <a href="fixture.html" class="btn-ver-fixture">Ver fixture completo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- LATERAL DERECHO: Novedades -->
+            <aside class="novedades-sidebar">
+                <h2 class="sidebar-title"><i class="fas fa-newspaper"></i> Últimas Novedades</h2>
+                <div class="novedades-container" id="novedadesContainer">
+                    <!-- Las cards se generan con JS -->
+                </div>
+            </aside>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p><i class="far fa-futbol"></i> CAMPEONATO DE FÚTBOL VETERANOS 2026 <i class="far fa-futbol"></i></p>
+                    <p>© 2026 Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-leyenda">
+                    <p>"Donde la experiencia se encuentra con el gol"</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- MODAL DE CONTACTO (POPUP) -->
+    <div id="contactoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-envelope"></i> Contacto</h2>
+            <div class="modal-body">
+                <div class="contacto-info">
+                    <p><i class="fas fa-phone"></i> Tel: (011) 1234-5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. San Martín 1234, CABA</p>
+                    <p><i class="fas fa-clock"></i> Lun a Vie: 9 a 18hs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE NOVEDAD (POPUP) -->
+    <div id="novedadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <div class="modal-body" id="modalContenido">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

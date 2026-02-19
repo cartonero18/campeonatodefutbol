@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixture - Veteranos 2026</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- HEADER (mismo que index) -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="logo-area">
+                    <img src="images/logo.png" alt="Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/80x80/372AAC/ffffff?text=Balón';">
+                    <h1 class="tournament-title">CAMPEONATO DE FÚTBOL VETERANOS</h1>
+                </div>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="fixture.html" class="active">Fixture</a></li>
+                        <li><a href="tabla.html">Tabla</a></li>
+                        <li><a href="equipos.html">Equipos</a></li>
+                      
+                    </ul>
+                </nav>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+
+        <!-- CONTENIDO ESPECÍFICO DE FIXTURE -->
+        <main class="page-content">
+            <div class="page-header">
+                <h2><i class="fas fa-calendar-alt"></i> Fixture Completo 2026</h2>
+                <p>Todos los partidos del campeonato</p>
+            </div>
+
+            <div class="pdf-download-section">
+                <div class="pdf-card">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-info">
+                        <h3>Fixture Primera Fase</h3>
+                        <p>Fechas 1 a 10 - Actualizado: 18/02/2026</p>
+                        <a href="pdfs/fixture-completo.pdf" download class="btn-download">
+                            <i class="fas fa-download"></i> Descargar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!--<div class="pdf-card">
+                    <div class="pdf-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="pdf-info">
+                        <h3>Fixture Fase Final</h3>
+                        <p>Cuartos, Semifinal y Final</p>
+                        <a href="pdfs/fixture-final.pdf" download class="btn-download">
+                            <i class="fas fa-download"></i> Descargar PDF
+                        </a>
+                    </div>
+                </div>
+            </div>-->
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p><i class="far fa-futbol"></i> CAMPEONATO DE FÚTBOL VETERANOS 2026</p>
+                    <p>© 2026 Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-leyenda">
+                    <p>"Donde la experiencia se encuentra con el gol"</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- MODALES (copiar los mismos del index) -->
+    <div id="contactoModal" class="modal">...</div>
+    <div id="novedadModal" class="modal">...</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
